@@ -1,10 +1,113 @@
 {
   "name": "Amazon Appstore",
-  "importedFrom": "https://github.com/tosdr/tosback2/blob/f762cd4bbb2571272985fed009201a23300ba9b2/rules/amazon.com.xml",
   "terms": {
     "Terms of Service": {
       "fetch": "https://www.amazon.com/gp/help/customer/display.html?nodeId=201485660",
-      "select": "div.help-content"
+      "select": ".help-content"
+    },
+    "Community Guidelines": {
+      "combine": [
+        {
+          "fetch": "https://developer.amazon.com/docs/policy-center/understanding-content-policy.html",
+          "select": "#guide",
+          "remove": [
+            "nav"
+          ]
+        },
+        {
+          "fetch": "https://developer.amazon.com/docs/policy-center/restricted-content.html",
+          "select": "#guide",
+          "remove": [
+            "nav"
+          ]
+        },
+        {
+          "fetch": "https://developer.amazon.com/docs/policy-center/intellectual-property.html",
+          "select": "#guide",
+          "remove": [
+            "nav"
+          ]
+        },
+        {
+          "fetch": "https://developer.amazon.com/docs/policy-center/device-and-system-abuse.html",
+          "select": "#guide",
+          "remove": [
+            "nav"
+          ]
+        }
+      ]
+    },
+    "Privacy Policy": {
+      "combine": [
+        {
+          "fetch": "https://developer.amazon.com/docs/policy-center/privacy-security.html",
+          "select": "#guide",
+          "remove": [
+            "nav"
+          ]
+        },
+        {
+          "fetch": "https://developer.amazon.com/docs/policy-center/user-data-privacy.html",
+          "select": "#guide",
+          "remove": [
+            "nav"
+          ]
+        },
+        {
+          "fetch": "https://developer.amazon.com/docs/policy-center/privacy-children.html",
+          "select": "#guide",
+          "remove": [
+            "nav"
+          ]
+        },
+        {
+          "fetch": "https://developer.amazon.com/docs/policy-center/advertising-id.html",
+          "select": "#guide",
+          "remove": [
+            "nav"
+          ]
+        }
+      ]
+    },
+    "Content Monetisation Policy": {
+      "combine": [
+        {
+          "fetch": "https://developer.amazon.com/docs/policy-center/monetization.html",
+          "select": "#guide",
+          "remove": [
+            "nav"
+          ]
+        },
+        {
+          "fetch": "http://developer.amazon.com/docs/policy-center/fire-tv-advertising.html",
+          "select": "#guide",
+          "remove": [
+            "nav"
+          ]
+        }
+      ]
+    },
+    "Review Guidelines": {
+      "combine": [
+        {
+          "fetch": "https://developer.amazon.com/docs/policy-center/listing-promo.html",
+          "select": "#guide",
+          "remove": [
+            "nav"
+          ]
+        },
+        {
+          "fetch": "https://developer.amazon.com/docs/policy-center/additional-distribution-policies.html",
+          "select": "#guide",
+          "remove": [
+            "nav"
+          ]
+        }
+      ]
+    },
+    "Developer Terms": {
+      "fetch": "https://developer.amazon.com/support/legal/da",
+      "select": ".online-agreement-system-document"
     }
   }
 }
