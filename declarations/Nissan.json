@@ -4,8 +4,8 @@
   "terms": {
     "Privacy Policy": {
       "fetch": "https://www.nissan-global.com/EN/PRIVACY/",
-      "select": "[role=\"main\"]",
-      "remove": ".nextGenNav"
+      "select": "#area0",
+      "remove": ".c_breadcrumbs"
     },
     "Terms of Service": {
       "fetch": "https://www.nissan-global.com/EN/ABOUT/",
