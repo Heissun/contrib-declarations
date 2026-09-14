@@ -3,7 +3,7 @@
   "importedFrom": "https://github.com/tosdr/tosback2/blob/f762cd4bbb2571272985fed009201a23300ba9b2/rules/nissan.com.xml",
   "terms": {
     "Privacy Policy": {
-      "fetch": "https://www.nissanusa.com/privacy.html",
+      "fetch": "https://www.nissan-global.com/EN/PRIVACY/",
       "select": "[role=\"main\"]",
       "remove": ".nextGenNav"
     },
